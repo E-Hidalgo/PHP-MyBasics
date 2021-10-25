@@ -1,3 +1,8 @@
+<!-- Generate an instruction that makes use of "echo"
+Generate an instruction that makes use of "print"
+Generate an instruction that makes use of "print_r", it is important that you assign a complex value to analyze its potential -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
