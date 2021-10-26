@@ -16,17 +16,16 @@ Generate a snippet that uses do while -->
 <body>
 
   <!-- ----------- FOR LOOP ---------- -->
-  <h5>Iterator FOR</h5>
+  <h3>Iterator FOR</h3>
   <?php
 for($i = 0; $i<5; $i++){
   echo "<p>Kike is {$i} crema.</p>\n";
 }
     ?>
 
-
   <!-- ----------- FOREACH LOOP ---------- -->
 
-  <h4>Iterator FOREACH</h4>
+  <h3>Iterator FOREACH</h3>
   <p>
     <?php
     echo "Array [3,6,9,12] multiplied by 2"
@@ -43,11 +42,44 @@ for($i = 0; $i<5; $i++){
     
     ?>
 
+  <!-- ----------- WHILE LOOP ---------- -->
+  <h3>Iterator While</h3>
+  <?php
+
+$i = 1;
+while ($i <= 10) {
+    echo $i++;  
+}
+?>
+
+  <!-- ----------- DO-WHILE LOOP ---------- -->
+  <h3>Iterator Do-While</h3>
+  <p>First example</p>
+  <?php
+
+$i = 0;
+do {
+    echo $i;
+} while ($i > 0);
+?>
+  <p>Second example</p>
 
 
+  <?php
+do {
+    if ($i < 5) {
+        echo "i is not enough high";
+        break;
+    }
+    $i *= $factor;
+    if ($i < $minimum_limit) {
+        break;
+    }
+   echo "i is ok";
 
 
-
+} while (0);
+?>
 </body>
 
 </html>
