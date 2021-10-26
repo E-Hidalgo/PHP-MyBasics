@@ -1,8 +1,3 @@
-<!-- Generate an instruction that makes use of "echo"
-Generate an instruction that makes use of "print"
-Generate an instruction that makes use of "print_r", it is important that you assign a complex value to analyze its potential -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,47 +6,67 @@ Generate an instruction that makes use of "print_r", it is important that you as
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Print</title>
 </head>
 
 <body>
-  <h1>Print Function</h1>
-  <a href="https://www.php.net/manual/en/language.operators.php" target="_blank">Official Website</a>
-  <a href="http://localhost:3000/iterators.php">Iterators</a>
+  <header>
+    <div class="header">
+      <a href="http://localhost:3000/arrays.php"><i class="fas fa-arrow-left"></i></a>
+      <div class="bola">
+        <img src="assets/Profile - Testing.png" width="150" alt="">
+        <h1>Print Function</h1>
+        <a href="https://www.php.net/manual/en/language.operators.php" target="_blank">Docs</a>
+      </div>
+      <a href="http://localhost:3000/iterators.php"><i class="fas fa-arrow-right"></i></a>
 
-  <h2>
-    <?php
+    </div>
+  </header>
+
+  <div class="flex-row margin-top">
+    <div class="card">
+      <h2>
+        <?php
 echo "This is my first line in PHP using echo"
 ?>
-  </h2>
+      </h2>
 
-  <h3>
-    <?php
+    </div>
+
+    <div class="card">
+      <h3>
+        <?php
 print "This is my second line in PHP using print"
 ?>
-  </h3>
+      </h3>
 
-  <pre>
+    </div>
+
+
+    <div class="card">
+      <pre>
   <?php
 $a = array ("Mavericks", "J-Bay", "Teahupoo");
 print_r ($a);
 ?>
 </pre>
 
-  <pre>
-  <?php
+    </div>
+
+    <div class="card">
+      <pre>
+      <?php
 $b = array ('a' => 'Alfredo', 'b' => 'Tupac', 'c' => array ('x', 'y', 'z'));
 print_r ($b);
 ?>
-</pre>
+      </pre>
+    </div>
+  </div>
 
-  <pre>
-  <?php
-$c = array ('a' => 'Alfredo', 'b' => 'Tupac', 'c' => array ('x', 'y', 'z'));
-print_r ($c);
-?>
-</pre>
 
 </body>
 

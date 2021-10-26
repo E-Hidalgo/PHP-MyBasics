@@ -9,85 +9,65 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Dates</title>
+
+  <title>Maths</title>
 </head>
 
 <body>
 
   <header class="header">
-    <a href="http://localhost:3000/operators.php"><i class="fas fa-arrow-left"></i></a>
+    <a href="http://localhost:3000/types.php"> <i class="fas fa-arrow-left"></i></a>
     <div class="bola">
       <img src="assets/Profile - Testing.png" width="150" alt="">
-      <h1>Dates</h1>
-      <a href="https://www.php.net/manual/en/datetime.formats.php" target="_blank">Docs</a>
-
+      <h1>Maths</h1>
+      <a href="https://www.php.net/manual/en/ref.math.php" target="_blank">Docs</a>
     </div>
-    <a href="http://localhost:3000/conditionals.php"><i class="fas fa-arrow-right"></i></a>
+    <a href="http://localhost:3000/strings.php"><i class="fas fa-arrow-right"></i></a>
   </header>
 
   <div class="flex-row margin-top">
     <div class="card">
-      <h5>Date Time</h5>
-
+      <h5>abs()</h5>
       <?php
-      $dateTime = new DateTime();
-      echo $dateTime->format("Y,m,d")
-
-?>
-
+      $number= -4.2;
+      echo abs($number);
+      ?>
     </div>
 
     <div class="card">
-      <h5>Date Time in Any Format</h5>
-
+      <h5>floor()</h5>
       <?php
-      $dateTime = new DateTime();
-      echo $dateTime->format("l, d-M-Y H:i:s T")
-
-?>
-
+      $number= -32.2;
+      echo floor($number);
+      ?>
     </div>
 
     <div class="card">
-      <h5>Current Day</h5>
-
+      <h5>max()</h5>
       <?php
-      $dateTime = new DateTime();
-      echo $dateTime->format("l");
-      echo "<br>";
-      echo $dateTime->format("d");
-
-?>
-
+      $array = [1,5,3,6,7,76,34,21];
+      echo max($array);
+      ?>
     </div>
 
     <div class="card">
-      <h5>Current Month Numeric</h5>
-
+      <h5>min()</h5>
       <?php
-      $dateTime = new DateTime();
-      echo $dateTime->format("m")
-
-?>
-
+      $array = [1,5,3,6,7,76,34,21];
+      echo min($array);
+      ?>
     </div>
-
 
     <div class="card">
-      <h5>Current Minutes Leading 00</h5>
-
+      <h5>rand()</h5>
       <?php
-  $dateTime = new DateTime();
-  echo $dateTime->format("i")
 
-?>
-
-
+      echo rand();
+      ?>
     </div>
-
   </div>
 
-  </div>
+
 
 </body>
 
