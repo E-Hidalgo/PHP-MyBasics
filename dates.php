@@ -12,8 +12,76 @@
 <body>
   <h1>Dates</h1>
   <a href="http://localhost:3000/operators.php">Iterators</a>
-  <a href="https://www.php.net/manual/en/language.operators.php" target="_blank">Official Website</a>
+  <a href="https://www.php.net/manual/en/datetime.formats.php" target="_blank">Official Website</a>
   <a href="http://localhost:3000/dates.php">Dates</a>
+
+
+  <div class="flex-row">
+    <div class="card">
+      <h5>Date Time</h5>
+
+      <?php
+      $dateTime = new DateTime();
+      echo $dateTime->format("Y,m,d")
+
+?>
+
+    </div>
+
+    <div class="card">
+      <h5>Date Time in Any Format</h5>
+
+      <?php
+      $dateTime = new DateTime();
+      echo $dateTime->format("l, d-M-Y H:i:s T")
+
+?>
+
+    </div>
+
+    <div class="card">
+      <h5>Current Day</h5>
+
+      <?php
+      $dateTime = new DateTime();
+      echo $dateTime->format("l");
+      echo "<br>";
+      echo $dateTime->format("d");
+
+?>
+
+    </div>
+
+    <div class="card">
+      <h5>Current Month Numeric</h5>
+
+      <?php
+      $dateTime = new DateTime();
+      echo $dateTime->format("m")
+
+?>
+
+    </div>
+
+  </div>
+  <div class="flex-row">
+
+    <div class="card">
+      <h5>Current Minutes Leading 00</h5>
+
+      <?php
+  $dateTime = new DateTime();
+  echo $dateTime->format("i")
+
+?>
+
+
+    </div>
+
+  </div>
+
+  </div>
+
 </body>
 
 </html>
