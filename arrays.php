@@ -28,6 +28,67 @@
     </div>
   </header>
 
+  <div class="flex-row margin-top">
+
+    <div class="card">
+      <h5>Print an array with strings</h5>
+      <?php
+      $fruits = array("Apple", "Banana", "Mango");
+      echo "<br>";
+      echo "<pre>";
+      print_r($fruits);
+      echo "</pre>";
+      ?>
+    </div>
+
+    <div class="card">
+      <h5>Print an array with numbers </h5>
+      <?php
+      $numbers = array(4, 7, 6.5, 9.7,);
+      echo "<br>";
+      echo "<pre>";
+      print_r($numbers);
+      echo "</pre>";
+      ?>
+    </div>
+
+    <div class="card">
+      <h5>Print an multidimensional array </h5>
+      <?php
+      $b = array('a' => 'Alfredo', 'b' => 'Tupac', 'c' => array('x', 'y', 'z'));
+      print_r($b);
+      ?>
+    </div>
+
+    <div class="card">
+      <h5>Count the length of the array</h5>
+      <?php
+      $numbers = array(4, 7, 6.5, 9.7,);
+      echo "<br>";
+      print_r($numbers);
+      $length = count($numbers);
+      echo "length of array: {$length}";
+      ?>
+
+    </div>
+
+    <div class="card">
+      <h5>Combining two arrays</h5>
+      <?php
+      print_r($numbers = array(1, 2, 3, 4));
+      echo "<hr>";
+
+      print_r($people = array("Joan", "Manu", "Pau", "Christian"));
+
+      echo "<hr>";
+      print_r(array_combine($numbers, $people));
+
+
+      ?>
+
+    </div>
+  </div>
+
 </body>
 
 </html>
