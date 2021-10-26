@@ -33,7 +33,7 @@
       <h5>Condition: are we on Monday?</h5>
       <?php
       $weekDay = new DateTime("l");
-      if( $weekDay->format("l") == "Monday") {
+      if ($weekDay->format("l") == "Monday") {
         echo "We are on Monday";
       } else {
         echo "Today is {$weekDay->format("l")}";
@@ -45,7 +45,7 @@
       <h5>Condition: are we in October?</h5>
       <?php
       $month = new DateTime("F");
-      if( $month->format("F") == "October") {
+      if ($month->format("F") == "October") {
         echo "We are in October";
       } else {
         echo "We are in {$month->format("F")}";
@@ -56,58 +56,58 @@
 
 
     <div class="card">
-      <h5>Condition: current min < 10?</h5>
-          <?php
+      <h5>Condition: current min < 10 or>15?</h5>
+      <?php
       $currentMin = new DateTime("i");
-      if( $currentMin->format("i") < 10) {
+      if ($currentMin->format("i") < 10) {
         echo "The current minute is less than 10";
-      }else if($currentMin->format("i") > 15) {
+      } else if ($currentMin->format("i") > 15) {
         echo "The current minute is more than 15";
       } else {
         echo "Does not meet any condition";
         echo "<br>";
         echo "We are in minute: {$currentMin->format("i")}";
       }
-      
+
       ?>
     </div>
 
     <div class="card">
       <h5>Switch Case for Week Days</h5>
       <?php
-        $currentDay= new DateTime("l");
+      $currentDay = new DateTime("l");
 
       switch ($currentDay->format("l")) {
         case "Monday":
           echo "Wtf... is Monday";
           break;
 
-          case "Tuesday":
-            echo "Wtf... still Tuesday";
-            break;
+        case "Tuesday":
+          echo "Wtf... still Tuesday";
+          break;
 
-            case "Wednesday":
-              echo "Wtf... almost Friday, Midweek";
-              break;
+        case "Wednesday":
+          echo "Wtf... almost Friday, Midweek";
+          break;
 
-              case "Thursday":
-                echo "THURSDAY :D";
-                break;
+        case "Thursday":
+          echo "THURSDAY :D";
+          break;
 
-                case "Friday":
-                  echo "Friday :D";
-                  break;
+        case "Friday":
+          echo "Friday :D";
+          break;
 
-                  case "Saturday":
-                    echo "Yeaaaah saturday :D";
-                    break;
+        case "Saturday":
+          echo "Yeaaaah saturday :D";
+          break;
 
-                    case "Sunday":
-                      echo "Lord's day";
-                      break;
+        case "Sunday":
+          echo "Lord's day";
+          break;
 
         default:
-echo "Is not working";
+          echo "Is not working";
           break;
       }
       ?>
