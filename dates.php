@@ -11,9 +11,9 @@
 
 <body>
   <h1>Dates</h1>
-  <a href="http://localhost:3000/operators.php">Iterators</a>
+  <a href="http://localhost:3000/operators.php">Operators</a>
   <a href="https://www.php.net/manual/en/datetime.formats.php" target="_blank">Official Website</a>
-  <a href="http://localhost:3000/dates.php">Dates</a>
+  <a href="http://localhost:3000/conditionals.php">Conditionals</a>
 
 
   <div class="flex-row">
@@ -63,8 +63,6 @@
 
     </div>
 
-  </div>
-  <div class="flex-row">
 
     <div class="card">
       <h5>Current Minutes Leading 00</h5>
