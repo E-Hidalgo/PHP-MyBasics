@@ -61,7 +61,7 @@
     </div>
 
     <div class="card">
-      <h5>Count the length of the array</h5>
+      <h5>count()</h5>
       <?php
       $numbers = array(4, 7, 6.5, 9.7,);
       echo "<br>";
@@ -72,22 +72,51 @@
 
     </div>
 
+  </div>
+
+  <div class="flex-row">
+
     <div class="card">
-      <h5>Combining two arrays</h5>
+      <h5>array_combine()</h5>
       <?php
-      print_r($numbers = array(1, 2, 3, 4));
+      $numbers = array(1, 2, 3, 4);
+      print_r($numbers);
       echo "<hr>";
-
-      print_r($people = array("Joan", "Manu", "Pau", "Christian"));
-
+      $names = array("Manu", "Alberto", "Alfredo", "Tupac");
+      print_r($names);
       echo "<hr>";
-      print_r(array_combine($numbers, $people));
-
-
+      $combine = array_combine($numbers, $names);
+      print_r($combine);
       ?>
 
     </div>
-  </div>
+
+    <div class="card">
+      <h5>end()</h5>
+      <?php
+      echo "<pre>";
+      print_r($numbers = array(1, 2, 3, 4));
+      echo "</pre>";
+      echo "<hr>";
+      echo "This is the last position: " . end($numbers);
+      ?>
+    </div>
+
+    <div class="flex-row">
+      <div class="card">
+        <h5>array_push()</h5>
+        <?php
+        $numbers = array("Alfredo", "Tupac", "Manu", "Pau");
+        print_r($numbers);
+        echo "<hr>";
+        echo "This is new array length: ";
+        print_r(array_push($numbers, "Snoop Dog"));
+        echo "<hr>";
+        print_r($numbers);
+        ?>
+      </div>
+
+    </div>
 
 </body>
 
