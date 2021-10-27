@@ -21,9 +21,10 @@
       <div class="bola">
         <img src="assets/Profile - Testing.png" width="150" alt="">
         <h1>Arrays</h1>
-        <a href="https://www.php.net/manual/en/language.operators.php" target="_blank">Docs</a>
+        <a href="https://www.php.net/manual/en/book.array.php" target="_blank">Docs</a>
       </div>
-      <a href="http://localhost:3000/print.php"><i class="fas fa-arrow-right"></i></a>
+      <a href="http://localhost:3000/functions.php"><i class="fas fa-arrow-right"></i></a>
+
 
     </div>
   </header>
